@@ -4,6 +4,9 @@
     --text-color: #333;
     --primary-color: rgb(238, 77, 45);
     --border-color: #dfdfdf;
+
+    --header-height: 120px;
+    --navbar-height: 38px;
 }
 
 * {
@@ -18,7 +21,7 @@ html {
 }
 
 .grid {
-    width: 1400px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
