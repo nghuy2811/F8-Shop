@@ -863,7 +863,156 @@
     color: var(--primary-color);
 }
 
- /* Sort + filter */
+/* Sort + filter */
+.home-filter {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    padding: 22px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.home-filter__label {
+    font-size: 1.4rem;
+    color: #555555;
+    margin-right: 16px;
+}
+
+.home-filter__btn {
+    min-width: 90px;
+    margin-right: 12px;
+}
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+}
 
 
+.home-filter__page {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
 
+.home-filter__page-num {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__page-current {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+}
+
+.home-filter__page-btn {
+    flex: 1;
+    display: flex;
+    background-color: var(--white-color);
+    text-decoration: none;
+}
+
+.home-filter__page-btn:first-child {
+    border-right: 1px solid #eeeeee;
+}
+
+.home-filter__page-btn--disabled {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.home-filter__page-btn--disabled .home-filter__page-control-icon {
+    color: #cccccc;
+}
+
+.home-filter__page-control-icon {
+    margin: auto;
+    font-size: 1.4rem;
+    color: #555555;
+}
+
+/* Product item */
+.home-product-item {
+    margin-top: 10px;
+}
+
+.home-product-item__img {
+    padding-top: 100%;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+}
+
+.home-product-item__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    height: 3.6rem;
+    margin: 10px 0;
+    /* Cho tên hiện ... khi dài */
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-product-item__price {
+
+}
+
+.home-product-item__price-old {
+
+}
+
+.home-product-item__price-sale {
+
+}
+
+.home-product-item__action {
+
+}
+
+.home-product-item__like {
+
+}
+
+.home-product-item__rating {
+
+}
+
+.home-product-item__origin {
+
+}
+
+.home-product-item__brand {
+
+}
+
+.home-product-item__location {
+
+}
+
+.home-product-item__favorite {
+
+}
+
+.home-product-item__sale-off {
+
+}
+
+.home-product-item__sale-percent {
+
+}
+
+.home-product-item__sale-label {
+
+}
