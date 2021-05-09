@@ -4,6 +4,7 @@
     --text-color: #333;
     --primary-color: rgb(238, 77, 45);
     --border-color: #dfdfdf;
+    --star-gold-color: #ffce3e;
 
     --header-height: 120px;
     --navbar-height: 38px;
@@ -180,6 +181,7 @@ html {
     border-radius: 2px;
     padding: 10px 16px;
     list-style: none;
+    z-index: 1;
 }
 
 .select-input__link {
