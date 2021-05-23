@@ -1,3 +1,7 @@
+.app {
+    overflow: hidden;
+}
+
 .opacity1 {
     opacity: 1 !important;
 }
@@ -429,6 +433,7 @@
 }
 
 .header__mobile-search {
+    display: none;
     padding: 0 12px;
 }
 
@@ -476,6 +481,7 @@
     display: inline-block;
     padding: 0 12px;
     cursor: pointer;
+    /* -webkit-tap-highlight-color: transparent; */
 }
 
 .header__cart-wrap:hover .header__cart-list {
@@ -865,6 +871,12 @@
     transform: translateY(-50%);
 }
 
+.header__sort-item--active {
+    border-bottom-color: var(--primary-color);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
 .header__sort-item--active .header__sort-link {
     color: var(--primary-color);
 }
@@ -941,6 +953,61 @@
 .category-item__link:hover {
     right: -4px;
     color: var(--primary-color);
+}
+
+/* Mobile category */
+.mobile-category {
+    display: none;
+}
+ 
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+    background-color: #87afd8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+    background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+    background-color: #88cf81;
+}
+
+.mobile-category__link {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    overflow: hidden;
+    text-align: center;
+    width: 110px;
+    height: 40px;
+    border-radius: 4px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0 18px;
 }
 
 /* Sort + filter */
@@ -1211,6 +1278,7 @@ i.home-product-item__like-icon-fill {
 
 .app__container__pagination {
     margin: 48px 0 32px;
+    padding-left: 0;
 }
 
 /* Footer */
